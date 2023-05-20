@@ -36,3 +36,53 @@ Dickey-Fuller = -10.338, Lag order = 6, p-value = 0.01
 alternative hypothesis: stationary
 
 **P-value = 0.01 it´s < 0.05 that is stationarity
+
+## Non-Stationary vs Stationary
+
+![dow](https://github.com/Deunich/CPI-Colombia/assets/114511470/892472fe-1fcb-4c58-a143-589b8ee5fff8)
+
+
+### Moving Average (MA) & Autoregressor (AR)
+
+![AR MA](https://github.com/Deunich/CPI-Colombia/assets/114511470/e134e6e0-a6dd-47d7-b2ef-717326dc4017)
+
+**Ask that the frequency be equal to the lag
+
+![lag](https://github.com/Deunich/CPI-Colombia/assets/114511470/2723f1e1-783e-43f2-9af3-cf4af4af82c7)
+
+**Arima Model0 & Ljung-Box
+
+Box-Ljung test
+
+data:  residuals(model0)
+X-squared = 1.726, df = 1, p-value = 0.1889
+
+MA(5) , Differences (2) , Autoregressor (5) ---> (5,2,5)
+![model0](https://github.com/Deunich/CPI-Colombia/assets/114511470/517058ea-b191-483d-9430-2620f3c3555e)
+
+## Arima Model1 & Ljung-Box
+
+Box-Ljung test
+
+data:  residuals(model1)
+X-squared = 0.12559, df = 1, p-value = 0.723
+
+MA(4) , Differences (2) , Autoregressor (4) ---> (4,2,4)
+![Model1](https://github.com/Deunich/CPI-Colombia/assets/114511470/8751ff56-9e72-4070-ad73-3b3b1c7c54e7)
+
+mistake
+
+![mistake](https://github.com/Deunich/CPI-Colombia/assets/114511470/c3389d51-c2b4-41f8-b5f1-02e8aa41537b)
+
+## Forecast next 10 months, December 2023
+
+
+![forecast](https://github.com/Deunich/CPI-Colombia/assets/114511470/ebcfd738-293c-4238-8634-315787e47d2b)
+
+## We graph the data (months)
+
+![months](https://github.com/Deunich/CPI-Colombia/assets/114511470/dfa31ebd-b279-43d6-b9af-ffe79220a256)
+
+## Multiplicative model
+![Multiplicative model](https://github.com/Deunich/CPI-Colombia/assets/114511470/9a23f300-e1f2-4584-ba60-4bd6d172c52a)
+
